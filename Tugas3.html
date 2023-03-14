@@ -1,0 +1,110 @@
+<script>
+  // Data Siswa
+  let p = { nama: "Dedi", nilai: 90 };
+  let p1 = { nama: "Ali", nilai: 75 };
+  let p2 = { nama: "Aldo", nilai: 50 };
+  let p3 = { nama: "Udin", nilai: 40 };
+  let p4 = { nama: "Sidin", nilai: 80 };
+
+  let person = [p, p1, p2, p3, p4];
+</script>
+<h1 align="center">ini adalah Tabel Nilai kelas 6</h1>
+<table align="center" border="1" cellpadding="10" cellspacing="0">
+  <thead>
+    <tr>
+      <th width="100px">No</th>
+      <th width="100px">Nama</th>
+      <th width="100px">Nilai</th>
+      <th width="100px">Grade</th>
+      <th width="150px">Predikat</th>
+      <th width="100px">Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <script>
+      let no = 1;
+      for (p of person) {
+        // Set lulus / tidak lulus
+        let ket = p.nilai >= 60 ? "Lulus" : "Tidak Lulus";
+
+        // Set Grade
+        let grade = "";
+        if (p.nilai >= 90 && p.nilai <= 100) {
+          grade = "A";
+        } else if (p.nilai >= 80 && p.nilai <= 89) {
+          grade = "B";
+        } else if (p.nilai >= 70 && p.nilai <= 79) {
+          grade = "C";
+        } else if (p.nilai >= 60 && p.nilai <= 69) {
+          grade = "D";
+        } else if (p.nilai >= 0 && p.nilai <= 59) {
+          grade = "E";
+        } else {
+          grade = "Nilai Tidak Valid";
+        }
+
+        // Set Predikat
+        let predikat = "";
+        switch (grade) {
+          case "A":
+            predikat = "Sangat Memuaskan";
+            break;
+          case "B":
+            predikat = "Baik";
+            break;
+          case "C":
+            predikat = "Cukup";
+            break;
+          case "D":
+            predikat = "Kurang";
+            break;
+          case "E":
+            predikat = "Sangat Kurang";
+            break;
+          default:
+            predikat = "Nilai tidak valid";
+            break;
+        }
+
+        // Set warna
+        let warna = "";
+        switch (grade) {
+          case "A":
+            warna = "#00FF00";
+            break;
+          case "B":
+            warna = "#00FFFF";
+            break;
+          case "C":
+            warna = "#FFFF00";
+            break;
+          case "D":
+            warna = "#FFA500";
+            break;
+          case "E":
+            warna = "#FF0000";
+            break;
+          default:
+            warna = "#FFFFFF";
+            break;
+        }
+
+        // tampilkan dokumen
+        document.write(
+          `<tr><td align="center" bgcolor="${warna}">${no++}</td><td bgcolor="${warna}">${
+            p.nama
+          }</td><td bgcolor="${warna}">${
+            p.nilai
+          }</td><td bgcolor="${warna}">${grade}</td><td bgcolor="${warna}">${predikat}</td><td bgcolor="${warna}">${ket}</td></tr>`
+        );
+      }
+    </script>
+  </tbody>
+</table>
+
+<!-- Warna pada tabel diatas berdasarkan dengan nilai yang didapatkan oleh siswa
+tersebut. Jika nilai siswa tersebut diatas 90 maka akan berwarna hijau, jika
+nilai siswa tersebut diatas 80 maka akan berwarna biru, jika nilai siswa
+tersebut diatas 70 maka akan berwarna kuning, jika nilai siswa tersebut diatas
+60 maka akan berwarna oranye, jika nilai siswa tersebut diatas 0 maka akan
+berwarna merah, jika nilai siswa tersebut diatas 0 maka akan berwarna putih. -->
