@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 4 JS | Dedi Supriadi</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Selamat Datang Di Kalkulator JavaScript</h1>
+    <form action="" id="kalkulator">
+      <table class="terserah" cellpadding="10" align="center">
+        <tr>
+          <th colspan="5">Kalkulator Sederhana</th>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Angka 1</label>
+          </td>
+          <td>:</td>
+          <td colspan="3">
+            <input type="text" name="angka" placeholder="Masukkan Angka 1" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Angka 2</label>
+          </td>
+          <td>:</td>
+          <td colspan="3">
+            <input type="text" name="angka2" placeholder="Masukkan Angka 2" />
+          </td>
+        </tr>
+        <!-- <tr>
+          <td>
+            <label for="">Hasil</label>
+          </td>
+          <td>:</td>
+          <td>
+            <input type="text" name="hasil" disabled />
+          </td>
+        </tr> -->
+        <tr>
+          <th colspan="5">Pilih Operator</th>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" name="btn_tambah" onclick="tambah()">
+              +
+            </button>
+          </td>
+          <td>
+            <button type="button" name="btn_kurang" onclick="kurang()">
+              -
+            </button>
+          </td>
+          <td>
+            <button type="button" name="btn_bagi" onclick="bagi()">/</button>
+          </td>
+          <td>
+            <button type="button" name="btn_kali" onclick="kali()">X</button>
+          </td>
+          <td>
+            <button type="button" name="btn_bagi" onclick="pangkat()">
+              X<sup>2</sup>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="5">Hasil</th>
+        </tr>
+        <tr>
+          <td colspan="5">
+            <input class="jumlah" type="text" name="hasil" disabled />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
