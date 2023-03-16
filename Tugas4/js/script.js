@@ -1,3 +1,11 @@
+// Salam pembuka
+let nama = prompt('Masukkan Nama anda :');
+alert('Selamat Datang di kalkulator javaScript ' + nama);
+var x = document.getElementById("a").innerHTML = "Selamat Datang Di kalkulator JavaScript " + nama;
+
+var y = document.getElementById("b").innerHTML = "Mari Berhitung Sampai Ajal menjemput....🤣🤣🤣"
+
+var z = document.getElementById("c").innerHTML = "Jangan Lupa Mampir Lagi ya kak " + nama;
 
 // kalkulator tambah
 function tambah() {
