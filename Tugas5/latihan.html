@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 5</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <img src="img/gambar1.jpeg" alt="" class="gbr" />
+    <img src="img/gambar2.jpeg" alt="" class="gbr" />
+    <img src="img/gambar3.jpeg" alt="" class="gbr" />
+
+<script>
+
+  $(document).ready(function(){
+  $(".gbr").click(function(){
+    $(this).hide(); // untuk menyembunyikan gambar saat diklik
+    setTimeout(function(){
+      $(".gbr").show(); // untuk menampilkan gambar kembali setelah waktu tertentu (4000 = 4 detik)
+    }, 4000);
+  });
+});
+
+</script>
+  </body>
+</html>
