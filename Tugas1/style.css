@@ -1,0 +1,18 @@
+.apaluh {
+  font-family: "Courier New", Courier, monospace;
+  color: #444;
+  border-collapse: collapse;
+  width: 50%;
+  border: 1px solid #f2f5f7;
+}
+.apaluh tr th {
+  background-color: #35a9db;
+  color: #fff;
+  font-weight: normal;
+}
+.apaluh,
+th,
+td {
+  padding: 8px 20px;
+  text-align: center;
+}
