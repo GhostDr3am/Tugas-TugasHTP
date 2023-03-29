@@ -90,6 +90,11 @@ $domisili = ["Jakarta", "Bandung", "Surabaya", "Malang", "Lombok"];
             </select>
           </td>
         </tr>
+        <tr>
+          <td>Email</td>
+          <td>:</td>
+          <td><input type="email" name="email" id="email" class="ip"></td>
+        </tr>
     <tfoot>
       <tr>
         <th colspan="3">
@@ -148,6 +153,7 @@ if (isset($_POST['proses'])) {
   $prodi = $_POST['prodi'];
   $skill = $_POST['skill'];
   $domisili = $_POST['domisili'];
+  $email = $_POST['email'];
 }
 
 ?>
@@ -208,5 +214,9 @@ if (isset($_POST['proses'])) {
       <td>:</td>
       <td><?= $domisili ?></td>
     </tr>
+    <tr>
+      <td>Email</td>
+      <td>:</td>
+      <td><?= $email ?></td>
   </table>
 </fieldset>
