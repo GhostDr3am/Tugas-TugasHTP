@@ -11,6 +11,6 @@ $pegawai = array(
 
 // cetak semua pegawai
 foreach ($pegawai as $data) {
-  $p = new pegawai($data[0], $data[1], $data[2], $data[3], $data[4]);
+  $p = new Pegawai($data[0], $data[1], $data[2], $data[3], $data[4]);
   echo $p->cetak();
 }
