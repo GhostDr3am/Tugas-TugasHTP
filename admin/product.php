@@ -20,6 +20,8 @@ $data_produk = $model->dataProduk();
     Data Produk
   </div>
   <div class="card-body">
+    <!-- membuat tombol tambah data -->
+    <a href="index.php?url=product_form" class="btn btn-primary btn-sm">Tambah</a>
     <table id="datatablesSimple">
       <thead>
         <tr>
@@ -31,6 +33,7 @@ $data_produk = $model->dataProduk();
           <th>Stok</th>
           <th>Minimal Stok</th>
           <th>Jenis Produk</th>
+          <th>Aksi</th>
         </tr>
       </thead>
       <tfoot>
@@ -43,6 +46,7 @@ $data_produk = $model->dataProduk();
           <th>Stok</th>
           <th>Minimal Stok</th>
           <th>Jenis Produk</th>
+          <th>Aksi</th>
         </tr>
       </tfoot>
       <tbody>
@@ -59,6 +63,13 @@ $data_produk = $model->dataProduk();
             <td><?= $row['stok'] ?></td>
             <td><?= $row['min_stok'] ?></td>
             <td><?= $row['jenis_produk_id'] ?></td>
+            <td>
+              <form action="">
+                <a href="index.php?url=product_detail&id=<?= $row['id'] ?>" class="btn btn-info btn-sm">Detail</a>
+                <a href="" class="btn btn-warning btn-sm">Ubah</a>
+                <a href="" class="btn btn-danger btn-sm">Hapus</a>
+              </form>
+            </td>
         </tr>
       <?php } ?>
       </tbody>

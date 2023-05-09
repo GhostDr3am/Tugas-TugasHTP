@@ -20,6 +20,7 @@ $jenis_pelanggan = $model->dataPelanggan();
     Table Pelanggan
   </div>
   <div class="card-body">
+    <a href="index.php?url=pelanggan_form" class="btn btn-primary btn-sm">Tambah</a>
     <table id="datatablesSimple">
       <thead>
         <tr>
@@ -31,6 +32,7 @@ $jenis_pelanggan = $model->dataPelanggan();
           <th>Tanggal Lahir</th>
           <th>Email</th>
           <th> Kartu id</th>
+          <th>Aksi</th>
         </tr>
       </thead>
       <tfoot>
@@ -43,6 +45,7 @@ $jenis_pelanggan = $model->dataPelanggan();
           <th>Tanggal Lahir</th>
           <th>Email</th>
           <th>Kartu id</th>
+          <th>Aksi</th>
         </tr>
       </tfoot>
       <tbody>
@@ -53,12 +56,19 @@ $jenis_pelanggan = $model->dataPelanggan();
           ?>
             <td><?= $no++ ?></td>
             <td><?= $row['kode'] ?></td>
-            <td><?= $row['nama_pelanggan'] ?></td>
+            <td><?= $row['nama'] ?></td>
             <td><?= $row['jk'] ?></td>
             <td><?= $row['tmp_lahir'] ?></td>
             <td><?= $row['tgl_lahir'] ?></td>
             <td><?= $row['email'] ?></td>
             <td><?= $row['kartu_id'] ?></td>
+            <td>
+              <form action="">
+                <a href="index.php?url=pelanggan_detail&id=<?= $row['id'] ?>" class="btn btn-info btn-sm">Detail</a>
+                <a href="" class="btn btn-warning btn-sm">Ubah</a>
+                <a href="" class="btn btn-danger btn-sm">Hapus</a>
+              </form>
+            </td>
         </tr>
       <?php } ?>
       </tbody>

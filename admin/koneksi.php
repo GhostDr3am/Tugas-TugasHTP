@@ -1,5 +1,5 @@
 <?php
-$dbname = "percobaan";
+$dbname = "web";
 $dsn = 'mysql:dbname=' . $dbname . ';host=localhost';
 $user = 'root';
 $password = '';
