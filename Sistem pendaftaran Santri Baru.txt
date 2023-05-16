@@ -1,0 +1,25 @@
+Judul : Sistem pendaftaran Santri Baru
+
+Skenario :
+- admin menginput kan data pengelola ponpes dan siswa
+- ketika ingin mendaftar siswa masuk ke halaman pendaftaran, kemudian mengisi form pendaftaran. Setelah mendaftar, siswa juga bisa mencetak form pendaftaran tersebut.
+- setelah mengisi dan mencetak hasil pendaftaran, siswa akan diarahkan ke halaman download Document komitmen wali murid, dimana Document tersebut harus di tanda tangani diatas materai oleh wali murid 
+- siswa dapat melihat tahun ajaran saat ini dan gelombang PPDB
+- admin atau pengelola ponpes dapat mengeksport data siswa
+- siswa dapat melihat biaya pendaftaran dan melakukan daftar ulang 
+- ketika siswa sudah melakukan pembayaran dan tagihan lunas, akan ada notifikasi SMS
+
+Fitur :
+- Login
+- CRUD untuk pengelola ponpes dan santri
+- Input form pendaftaran 
+- Setting tahun ajaran, gelombang PPDB 
+- Cetak form pendaftaran
+- Multi sekolah 
+- Multi user, multi admin 
+- Verifikasi pendaftaran
+- Eksport data siswa 
+- Biaya pendaftaran + daftar ulang 
+- komitmen wali murid 
+- SMS notifikasi
+- Virtual account
